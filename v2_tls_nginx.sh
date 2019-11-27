@@ -8,7 +8,7 @@
 #	email:admin@wulabing.com
 #	Official document: www.v2ray.com
 #====================================================
-
+#修改自wulabing，https://github.com/wulabing/V2Ray_ws-tls_bash_onekey
 #fonts color
 Green="\033[32m"
 Red="\033[31m"
