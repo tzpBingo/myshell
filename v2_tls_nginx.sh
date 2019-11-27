@@ -563,6 +563,17 @@ tls_type(){
         echo -e "${Error} ${RedBG} Nginx 或 配置文件不存在，请正确安装脚本后执行${Font}"
     fi
 }
+
+uninstall_all(){
+    [[ -f $nginx_systemd_file ]] && rm -f $nginx_systemd_file
+    [[ -f $v2ray_systemd_file ]] && rm -f $v2ray_systemd_file
+    [[ -d $v2ray_bin_file ]] && rm -rf $v2ray_bin_file
+    [[ -d $nginx_dir ]] && rm -rf $nginx_dir
+    [[ -d $v2ray_conf_dir ]] && rm -rf $v2ray_conf_dir
+    [[ -d $web_dir ]] && rm -rf $web_dir
+    echo -e "${OK} ${GreenBG} 已卸载，SSL证书文件已保留 ${Font}"
+}
+
 main(){
     is_root
     check_system
@@ -587,11 +598,14 @@ main(){
 }
 list(){
     case $1 in
-        tls_modify)
+        tls)
             tls_type
             ;;
-        web_modify)
+        web)
             web_camouflage
+            ;;
+        uninstall)
+            uninstall_all
             ;;
         *)
             main
