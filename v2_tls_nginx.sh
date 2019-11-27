@@ -201,6 +201,7 @@ modify_nginx(){
 }
 web_camouflage(){
     ##请注意 这里和LNMP脚本的默认路径冲突，千万不要在安装了LNMP的环境下使用本脚本，否则后果自负
+    re='^[0-9]+$'
     rm -rf /home/wwwroot && mkdir -p /home/wwwroot && cd /home/wwwroot
     echo "请选择站点伪装（default:1）:"
     echo "1: https://github.com/tzpBingo/safario.git"
@@ -208,19 +209,25 @@ web_camouflage(){
     echo "3: https://github.com/tzpBingo/cohost.git"
     echo "4: https://github.com/tzpBingo/roadtrip.git"
     read -p  "请输入：" webcamouflage
-    ##[[ -z ${webcamouflage} ]] && webcamouflage=1
-    if [[ webcamouflage == 2 ]];then
-        git clone https://github.com/tzpBingo/visualize.git
-        mv visualize website
-    elif [[ webcamouflage == 3 ]];then
-        git clone https://github.com/tzpBingo/cohost.git
-        mv cohost website
-    elif [[ webcamouflage == 4 ]];then
-        git clone https://github.com/tzpBingo/roadtrip.git
-        mv safario website
+
+    if ! [[ $webcamouflage =~ $re ]] ; then
+        echo "git clone https://github.com/tzpBingo/safario.git website"
+        git clone https://github.com/tzpBingo/safario.git website
+    elif (( webcamouflage == 1 )) ; then
+        echo "git clone https://github.com/tzpBingo/safario.git  website"
+        git clone https://github.com/tzpBingo/safario.git  website
+    elif (( webcamouflage == 2 )) ; then
+        echo "git clone https://github.com/tzpBingo/visualize.git  website"
+        git clone https://github.com/tzpBingo/visualize.git  website
+    elif (( webcamouflage == 3 )) ; then
+        echo "git clone https://github.com/tzpBingo/cohost.git  website"
+        git clone https://github.com/tzpBingo/cohost.git  website
+    elif (( webcamouflage == 4 )) ; then
+        echo "git clone https://github.com/tzpBingo/roadtrip.git  website"
+        git clone https://github.com/tzpBingo/roadtrip.git  website
     else
-        git clone https://github.com/tzpBingo/safario.git
-        mv roadtrip website
+        echo "git clone https://github.com/tzpBingo/safario.git  website"
+        git clone https://github.com/tzpBingo/safario.git  website
     fi
     judge "web 站点伪装"
 }
@@ -582,6 +589,9 @@ list(){
     case $1 in
         tls_modify)
             tls_type
+            ;;
+        web_modify)
+            web_camouflage
             ;;
         *)
             main
