@@ -202,7 +202,7 @@ modify_nginx(){
 web_camouflage(){
     ##请注意 这里和LNMP脚本的默认路径冲突，千万不要在安装了LNMP的环境下使用本脚本，否则后果自负
     re='^[0-9]+$'
-    rm -rf /home/wwwroot && mkdir -p /home/wwwroot && cd /home/wwwroot
+    rm -rf /home/wwwroot && mkdir -p /home/wwwroot/website && cd /home/wwwroot
     echo "请选择站点伪装（default:1）:"
     echo "1: https://github.com/tzpBingo/safario.git"
     echo "2: https://github.com/tzpBingo/visualize.git"
