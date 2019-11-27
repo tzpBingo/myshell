@@ -203,25 +203,25 @@ web_camouflage(){
     ##请注意 这里和LNMP脚本的默认路径冲突，千万不要在安装了LNMP的环境下使用本脚本，否则后果自负
     rm -rf /home/wwwroot && mkdir -p /home/wwwroot && cd /home/wwwroot
     echo "请选择站点伪装（default:1）:"
-        echo "1: https://github.com/tzpBingo/roadtrip.git"
-        echo "2: https://github.com/tzpBingo/visualize.git"
-        echo "3: https://github.com/tzpBingo/cohost.git"
-        echo "4: https://github.com/tzpBingo/safario.git"
-        read -p  "请输入：" webcamouflage
-        [[ -z ${webcamouflage} ]] && webcamouflage=1
-        if [[ webcamouflage == 2 ]];then
-            git clone https://github.com/tzpBingo/visualize.git
-            mv visualize website
-        elif [[ webcamouflage == 3 ]];then
-            git clone https://github.com/tzpBingo/cohost.git
-            mv cohost website
-        elif [[ webcamouflage == 4 ]];then
-            git clone https://github.com/tzpBingo/safario.git
-            mv safario website
-        else
-            git clone https://github.com/tzpBingo/roadtrip.git
-            mv roadtrip website
-        fi
+    echo "1: https://github.com/tzpBingo/safario.git"
+    echo "2: https://github.com/tzpBingo/visualize.git"
+    echo "3: https://github.com/tzpBingo/cohost.git"
+    echo "4: https://github.com/tzpBingo/roadtrip.git"
+    read -p  "请输入：" webcamouflage
+    ##[[ -z ${webcamouflage} ]] && webcamouflage=1
+    if [[ webcamouflage == 2 ]];then
+        git clone https://github.com/tzpBingo/visualize.git
+        mv visualize website
+    elif [[ webcamouflage == 3 ]];then
+        git clone https://github.com/tzpBingo/cohost.git
+        mv cohost website
+    elif [[ webcamouflage == 4 ]];then
+        git clone https://github.com/tzpBingo/roadtrip.git
+        mv safario website
+    else
+        git clone https://github.com/tzpBingo/safario.git
+        mv roadtrip website
+    fi
     judge "web 站点伪装"
 }
 v2ray_install(){
