@@ -211,12 +211,16 @@ web_camouflage(){
         [[ -z ${webcamouflage} ]] && webcamouflage=1
         if [[ webcamouflage == 2 ]];then
             git clone https://github.com/tzpBingo/visualize.git
+            mv visualize website
         elif [[ webcamouflage == 3 ]];then
             git clone https://github.com/tzpBingo/cohost.git
+            mv cohost website
         elif [[ webcamouflage == 4 ]];then
             git clone https://github.com/tzpBingo/safario.git
+            mv safario website
         else
             git clone https://github.com/tzpBingo/roadtrip.git
+            mv roadtrip website
         fi
     judge "web 站点伪装"
 }
@@ -391,7 +395,7 @@ nginx_conf_add(){
         ssl_ciphers           TLS13-AES-256-GCM-SHA384:TLS13-CHACHA20-POLY1305-SHA256:TLS13-AES-128-GCM-SHA256:TLS13-AES-128-CCM-8-SHA256:TLS13-AES-128-CCM-SHA256:EECDH+CHACHA20:EECDH+CHACHA20-draft:EECDH+ECDSA+AES128:EECDH+aRSA+AES128:RSA+AES128:EECDH+ECDSA+AES256:EECDH+aRSA+AES256:RSA+AES256:EECDH+ECDSA+3DES:EECDH+aRSA+3DES:RSA+3DES:!MD5;
         server_name           serveraddr.com;
         index index.html index.htm;
-        root  /home/wwwroot/roadtrip;
+        root  /home/wwwroot/website;
         error_page 400 = /400.html;
         location /ray/
         {
