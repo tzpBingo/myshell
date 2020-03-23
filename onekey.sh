@@ -292,6 +292,7 @@ modify_nginx_other() {
 }
 web_camouflage() {
     ##请注意 这里和LNMP脚本的默认路径冲突，千万不要在安装了LNMP的环境下使用本脚本，否则后果自负
+	sed -i 's/3DCEList/website/g' ${nginx_conf}
     re='^[0-9]+$'
     rm -rf /home/wwwroot && mkdir -p /home/wwwroot/website && cd /home/wwwroot
     echo "请选择站点伪装（default:1）:"
@@ -299,6 +300,7 @@ web_camouflage() {
     echo "2: https://github.com/tzpBingo/visualize.git"
     echo "3: https://github.com/tzpBingo/cohost.git"
     echo "4: https://github.com/tzpBingo/roadtrip.git"
+	echo "5: https://github.com/tzpBingo/CkinVideoPlayer.git"
     read -p  "请输入：" webcamouflage
 
     if ! [[ $webcamouflage =~ $re ]] ; then
@@ -316,6 +318,9 @@ web_camouflage() {
     elif (( webcamouflage == 4 )) ; then
         echo "git clone https://github.com/tzpBingo/roadtrip.git  website"
         git clone https://github.com/tzpBingo/roadtrip.git  website
+	elif (( webcamouflage == 5 )) ; then
+        echo "git clone https://github.com/tzpBingo/CkinVideoPlayer.git  website"
+        git clone https://github.com/tzpBingo/CkinVideoPlayer.git  website
     else
         echo "git clone https://github.com/tzpBingo/safario.git  website"
         git clone https://github.com/tzpBingo/safario.git  website
