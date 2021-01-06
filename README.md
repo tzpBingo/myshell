@@ -22,6 +22,7 @@ mv geckodriver /usr/local/bin
 ```
 3. 执行脚本
 ```
-python3 refresh-aws-starter-key.py -e awsstarter@email.com -p password
+wget --no-check-certificate  https://raw.githubusercontent.com/tzpBingo/myshell/master/refresh-aws-starter-session.py -O refresh-aws-starter-session.py
+python3 refresh-aws-starter-session.py -e awsstarter@email.com -p password
 ```
 ---------
