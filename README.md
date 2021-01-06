@@ -25,4 +25,6 @@ mv geckodriver /usr/local/bin
 wget --no-check-certificate  https://raw.githubusercontent.com/tzpBingo/myshell/master/refresh-aws-starter-session.py -O refresh-aws-starter-session.py
 python3 refresh-aws-starter-session.py -e awsstarter@email.com -p password
 ```
+4. 效果
+![image](https://github.com/tzpBingo/myshell/blob/master/imgs/refresh-aws-starter-session.jpg)
 ---------
