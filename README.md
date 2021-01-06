@@ -52,8 +52,8 @@ wget --no-check-certificate https://raw.githubusercontent.com/tzpBingo/myshell/m
 1. 安装环境
 ```
 yum install python3 -y 
-yum install firefox -y &&
-yum install dbus-x11 dbus -y &&
+yum install firefox -y
+yum install dbus-x11 dbus -y
 eval `dbus-launch --sh-syntax`
 ```
 2.安装Python依赖和驱动
