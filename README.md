@@ -62,7 +62,7 @@ pip3 install --upgrade pip
 pip3 install selenium
 wget  https://github.com/mozilla/geckodriver/releases/download/v0.28.0/geckodriver-v0.28.0-linux64.tar.gz
 tar -zxvf geckodriver-v0.28.0-linux64.tar.gz
-mv geckodriver /usr/local/bin
+mv geckodriver /usr/bin
 ```
 3. 执行脚本
 ```
