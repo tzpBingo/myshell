@@ -1,5 +1,6 @@
 常用Shell脚本
 =========
+
 ###  [awsmanager.sh] AWS Cli Shell 控制，当前支持EC2、Lightsail
 > 用法：
 1.安装aws cli [官网文档](https://docs.aws.amazon.com/zh_cn/cli/latest/userguide/install-cliv2-linux.html)
@@ -74,3 +75,5 @@ python3 refresh-aws-starter-session.py -e awsstarter@email.com -p password
 ###  [onekey.sh] v2ray一键安装脚本
 > 用法：[wulabing](https://github.com/wulabing/V2Ray_ws-tls_bash_onekey)
 ---------
+
+[加入TG讨论](https://t.me/clishellmanager)
