@@ -2,11 +2,11 @@ red="\033[31m"
 black="\033[0m"
 
 #====================================================#
-#	System Request:Ubuntu 18.04+/Centos 7+			 #
-#	Author:	tzpbingo								 #
-#	Dscription: aws cli shell manager				 #
-#	Version: 1.0									 #
-#	email:tzpbingo@gmail.com						 #
+#	System Request:Ubuntu 18.04+/Centos 7+	     #
+#	Author:	tzpbingo			     #
+#	Dscription: aws cli shell manager	     #
+#	Version: 1.0				     #
+#	email:tzpbingo@gmail.com		     #
 #====================================================#
 
 region=us-east-1
