@@ -1,7 +1,7 @@
 常用Shell脚本
 =========
 - **awsmanager.sh** AWS Cli Shell 控制，当前支持EC2、Lightsail
->> 用法：
+> 用法：
 1.安装aws cli [官网文档](https://docs.aws.amazon.com/zh_cn/cli/latest/userguide/install-cliv2-linux.html)
 ```
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -23,10 +23,10 @@ wget --no-check-certificate https://raw.githubusercontent.com/tzpBingo/myshell/m
 ./awsmanager.sh
 ```
 4. 效果
->>>> ![image](https://github.com/tzpBingo/myshell/blob/master/imgs/aws.gif)
+>> ![image](https://github.com/tzpBingo/myshell/blob/master/imgs/aws.gif)
 ---------
 - **refresh-aws-starter-session.py** 自动获取AWS Starter Access 信息并写入/root/.aws/credentials
->> 用法：
+> 用法：
 1. 安装环境
 ```
 yum install python3 -y 
@@ -48,8 +48,8 @@ wget --no-check-certificate  https://raw.githubusercontent.com/tzpBingo/myshell/
 python3 refresh-aws-starter-session.py -e awsstarter@email.com -p password
 ```
 4. 效果
-![image](https://github.com/tzpBingo/myshell/blob/master/imgs/refresh-aws-starter-session.jpg)
+>> ![image](https://github.com/tzpBingo/myshell/blob/master/imgs/refresh-aws-starter-session.jpg)
 ---------
 - **onekey.sh** v2ray一键安装脚本
->> 用法：[wulabing](https://github.com/wulabing/V2Ray_ws-tls_bash_onekey)
+> 用法：[wulabing](https://github.com/wulabing/V2Ray_ws-tls_bash_onekey)
 ---------
