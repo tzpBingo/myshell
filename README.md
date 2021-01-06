@@ -24,7 +24,28 @@ wget --no-check-certificate https://raw.githubusercontent.com/tzpBingo/myshell/m
 ```
 4. 效果
 >> ![image](https://github.com/tzpBingo/myshell/blob/master/imgs/aws.gif)
----------
+---------------------------------------------------------------------------------
+
+- **azmanager.sh** Azure Cli Shell 控制
+> 用法：
+1.安装azure cli [官网文档](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=script)
+```
+curl -L https://aka.ms/InstallAzureCli | bash
+```
+2. 配置Azure Cli
+```
+# 运行命令，按提示登录，具体请查看文档
+az login
+```
+3. 运行脚本
+```
+wget --no-check-certificate https://raw.githubusercontent.com/tzpBingo/myshell/master/azmanager.sh -O azmanager.sh && chmod +x azmanager.sh
+./azmanager.sh
+```
+4. 效果
+>> ![image](https://github.com/tzpBingo/myshell/blob/master/imgs/az.jpg)
+------------------------------------------------------------------------
+
 - **refresh-aws-starter-session.py** 自动获取AWS Starter Access 信息并写入/root/.aws/credentials
 > 用法：
 1. 安装环境
@@ -49,7 +70,7 @@ python3 refresh-aws-starter-session.py -e awsstarter@email.com -p password
 ```
 4. 效果
 >> ![image](https://github.com/tzpBingo/myshell/blob/master/imgs/refresh-aws-starter-session.jpg)
----------
+------------------------------------------------------------------------
 - **onekey.sh** v2ray一键安装脚本
 > 用法：[wulabing](https://github.com/wulabing/V2Ray_ws-tls_bash_onekey)
 ---------
