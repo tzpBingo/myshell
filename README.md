@@ -1,6 +1,6 @@
 常用Shell脚本
 =========
-- **awsmanager.sh** AWS Cli Shell 控制，当前支持EC2、Lightsail
+###  [awsmanager.sh] AWS Cli Shell 控制，当前支持EC2、Lightsail
 > 用法：
 1.安装aws cli [官网文档](https://docs.aws.amazon.com/zh_cn/cli/latest/userguide/install-cliv2-linux.html)
 ```
@@ -26,7 +26,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/tzpBingo/myshell/m
 >> ![image](https://github.com/tzpBingo/myshell/blob/master/imgs/aws.gif)
 ---------------------------------------------------------------------------------
 
-- **azmanager.sh** Azure Cli Shell 控制
+###  [azmanager.sh] Azure Cli Shell 控制
 > 用法：
 1.安装azure cli [官网文档](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=script)
 ```
@@ -46,7 +46,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/tzpBingo/myshell/m
 >> ![image](https://github.com/tzpBingo/myshell/blob/master/imgs/az.jpg)
 ------------------------------------------------------------------------
 
-- **refresh-aws-starter-session.py** 自动获取AWS Starter Access 信息并写入/root/.aws/credentials
+###  [refresh-aws-starter-session.py] 自动获取AWS Starter Access 信息并写入/root/.aws/credentials
 > 用法：
 1. 安装环境
 ```
@@ -71,6 +71,6 @@ python3 refresh-aws-starter-session.py -e awsstarter@email.com -p password
 4. 效果
 >> ![image](https://github.com/tzpBingo/myshell/blob/master/imgs/refresh-aws-starter-session.jpg)
 ------------------------------------------------------------------------
-- **onekey.sh** v2ray一键安装脚本
+###  [onekey.sh] v2ray一键安装脚本
 > 用法：[wulabing](https://github.com/wulabing/V2Ray_ws-tls_bash_onekey)
 ---------
