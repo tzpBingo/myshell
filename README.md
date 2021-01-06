@@ -1,9 +1,9 @@
 常用Shell脚本
 =========
-- [onekey.sh] v2ray一键安装脚本
+- **onekey.sh** v2ray一键安装脚本
 >> 用法：[wulabing](https://github.com/wulabing/V2Ray_ws-tls_bash_onekey)
 ---------
-- [refresh-aws-starter-key.py] 自动获取AWS Starter Access 信息并写入/root/.aws/credentials
+- **refresh-aws-starter-key.py** 自动获取AWS Starter Access 信息并写入/root/.aws/credentials
 >> 用法：
 1. 安装环境
 ```
