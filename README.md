@@ -1,4 +1,4 @@
-常用Shell脚本
+常用Shell脚本，[BUG反馈](https://t.me/clishellmanager)
 =========
 
 ###  [awsmanager.sh] AWS Cli Shell 控制，当前支持EC2、Lightsail
