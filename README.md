@@ -47,7 +47,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/tzpBingo/myshell/m
 >> ![image](https://github.com/tzpBingo/myshell/blob/master/imgs/az.jpg)
 ------------------------------------------------------------------------
 
-###  [refresh-aws-starter-session.py] 自动获取AWS Starter Access 信息并写入/root/.aws/credentials
+###  [refresh-aws-starter-session.py] 自动获取AWS Starter Access 信息并写入/root/.aws/credentials【建议内存1G或以上】
 > 用法：
 1. 安装环境
 ```
